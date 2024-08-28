@@ -18,6 +18,7 @@
 		02CBEF892BBCAF6E004A6D46 /* Chat_IATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBEF882BBCAF6E004A6D46 /* Chat_IATests.swift */; };
 		02CBEF932BBCAF6E004A6D46 /* Chat_IAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBEF922BBCAF6E004A6D46 /* Chat_IAUITests.swift */; };
 		02CBEF952BBCAF6E004A6D46 /* Chat_IAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBEF942BBCAF6E004A6D46 /* Chat_IAUITestsLaunchTests.swift */; };
+		0BBD06412C7F3E92000ABED3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD06402C7F3E92000ABED3 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		02CBEF8E2BBCAF6E004A6D46 /* Chat IAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat IAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CBEF922BBCAF6E004A6D46 /* Chat_IAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_IAUITests.swift; sourceTree = "<group>"; };
 		02CBEF942BBCAF6E004A6D46 /* Chat_IAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_IAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BBD06402C7F3E92000ABED3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				028AC6732BBCE84300EC9A46 /* TextMessage.swift */,
 				0286048F2BBE195100E8B985 /* ConversationView.swift */,
+				0BBD06402C7F3E92000ABED3 /* WelcomeView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -213,7 +216,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					02CBEF732BBCAF6C004A6D46 = {
 						CreatedOnToolsVersion = 14.2;
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CBEF7A2BBCAF6C004A6D46 /* ContentView.swift in Sources */,
+				0BBD06412C7F3E92000ABED3 /* WelcomeView.swift in Sources */,
 				028059E62BBCCAD8006DB110 /* ViewModel.swift in Sources */,
 				028AC6742BBCE84300EC9A46 /* TextMessage.swift in Sources */,
 				02CBEF782BBCAF6C004A6D46 /* Chat_IAApp.swift in Sources */,
@@ -359,6 +363,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -419,6 +424,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
