@@ -14,7 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ConversationView()
+            
+           ConversationView()
                 .environmentObject(viewModel)
                 .padding(.horizontal, 12)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -34,9 +35,9 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "paperplane")
                         .foregroundColor(Color.white)
-                        .frame(width: 44, height: 44)
+                        .frame(width: 44, height: 40)
                         .background(Color.blue)
-                        .cornerRadius(22)
+                        .cornerRadius(21)
                 }
                 .padding(.leading, 8)
                 

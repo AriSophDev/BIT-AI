@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    
     var body: some View {
         VStack {
             Image("logo")
@@ -16,7 +18,13 @@ struct WelcomeView: View {
                 .font(.title)
                 .fontWeight(.bold)
             
-            Button("Iniciar Sesión")
+           Button("Iniciar Sesión") {
+                
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(25)
         }
     }
 }
