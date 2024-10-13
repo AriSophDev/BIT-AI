@@ -16,7 +16,7 @@ struct WelcomeView: View {
             Text("Bienvenido a Bit AI")
                 .padding()
                 .font(.title)
-                .fontWeight(.bold)
+               // .fontWeight(.bold)
             
            Button("Iniciar Sesión") {
                 

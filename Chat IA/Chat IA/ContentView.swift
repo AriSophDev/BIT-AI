@@ -19,14 +19,23 @@ struct ContentView: View {
                 .environmentObject(viewModel)
                 .padding(.horizontal, 12)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-            HStack{
-                TextField("Escribe la pregunta a Bit",
-                text: $prompt,
-                axis: .vertical)
-                .padding(12)
-                .background(Color(.systemGray6))
-                .cornerRadius(25)
-                .lineLimit(6)
+            HStack {
+                if #available(iOS 16.0, *) {
+                    TextField("Escribe la pregunta a Bit",
+                              text: $prompt,
+                              axis: .vertical)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(25)
+                        .lineLimit(6)
+                } else {
+                    TextField("Escribe la pregunta a Bit",
+                              text: $prompt)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(25)
+                }
+            }
                 
                 Button {
                     Task {
@@ -40,14 +49,9 @@ struct ContentView: View {
                         .cornerRadius(21)
                 }
                 .padding(.leading, 8)
-                
             }
-            
-            
         }
-        .padding(.leading, 8)
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
