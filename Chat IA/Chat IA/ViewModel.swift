@@ -11,12 +11,13 @@ import SwiftOpenAI
 
 final class ViewModel: ObservableObject{
     @Published var messages : [MessageChatGPT] = [
-        .init(text: "¡Bienvenido/a a tu nuevo compañero de inteligencia artificial, BIT! Estoy aquí para ayudarte en todo lo que necesites.", role: .system)
+        .init(text: "¡Bienvenido/a a tu nuevo compañero de inteligencia artificial, BIT! Estoy aquí para ayudarte en todo lo que necesites.",
+              role: .system)
     ]
     @Published var currentMessage: MessageChatGPT = .init(text: "", role: .assistant)
     
     
-    var openAI = SwiftOpenAI(apiKey: "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")
+    var openAI = SwiftOpenAI(apiKey: "API_KEY")
     
     func send(message: String) async{
 
@@ -43,7 +44,7 @@ final class ViewModel: ObservableObject{
         do {
             
             let stream = try await openAI.createChatCompletionsStream(
-                model: .gpt3_5(.turbo),
+                model: .gpt3_5(.gpt_3_5_turbo_0125),
                 messages: messages,
                 optionalParameters: optionalParameters
             )

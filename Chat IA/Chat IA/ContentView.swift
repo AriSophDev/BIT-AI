@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
-    @State var prompt : String = "Dame una lista de ingredientes"
+    @State var prompt : String = ""
     
     
     var body: some View {
